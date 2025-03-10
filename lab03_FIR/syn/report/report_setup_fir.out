@@ -1,0 +1,317 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : fir
+Version: R-2020.09-SP5
+Date   : Tue Mar 11 06:50:25 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: y_out_reg[1]
+              (rising edge-triggered flip-flop clocked by axis_clk)
+  Endpoint: y_out_reg[31]
+            (rising edge-triggered flip-flop clocked by axis_clk)
+  Path Group: axis_clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock axis_clk (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  y_out_reg[1]/CK (DFFRQXL)                0.00       0.50 r
+  y_out_reg[1]/Q (DFFRQXL)                 0.28       0.78 f
+  U1183/Y (OR2XL)                          0.16       0.94 f
+  U526/Y (AOI21XL)                         0.11       1.05 r
+  U492/Y (OAI21XL)                         0.10       1.15 f
+  U525/Y (AOI21XL)                         0.11       1.26 r
+  U491/Y (OAI21XL)                         0.10       1.35 f
+  U524/Y (AOI21XL)                         0.11       1.47 r
+  U490/Y (OAI21XL)                         0.10       1.56 f
+  U523/Y (AOI21XL)                         0.11       1.67 r
+  U489/Y (OAI21XL)                         0.10       1.77 f
+  U522/Y (AOI21XL)                         0.11       1.88 r
+  U488/Y (OAI21XL)                         0.10       1.98 f
+  U521/Y (AOI21XL)                         0.11       2.09 r
+  U487/Y (OAI21XL)                         0.10       2.19 f
+  U520/Y (AOI21XL)                         0.11       2.30 r
+  U486/Y (OAI21XL)                         0.10       2.39 f
+  U519/Y (AOI21XL)                         0.11       2.51 r
+  U485/Y (OAI21XL)                         0.10       2.60 f
+  U518/Y (AOI21XL)                         0.11       2.71 r
+  U484/Y (OAI21XL)                         0.10       2.81 f
+  U483/Y (AOI21XL)                         0.11       2.92 r
+  U478/Y (OAI21XL)                         0.10       3.02 f
+  U482/Y (AOI21XL)                         0.11       3.13 r
+  U477/Y (OAI21XL)                         0.10       3.23 f
+  U481/Y (AOI21XL)                         0.11       3.34 r
+  U476/Y (OAI21XL)                         0.10       3.44 f
+  U480/Y (AOI21XL)                         0.11       3.54 r
+  U475/Y (OA21XL)                          0.12       3.66 r
+  U479/Y (OAI21XL)                         0.08       3.74 f
+  U2086/Y (AO21XL)                         0.20       3.94 f
+  U2138/Y (AO21XL)                         0.20       4.15 f
+  U539/Y (AOI21XL)                         0.09       4.24 r
+  U538/Y (XOR2XL)                          0.11       4.34 r
+  U410/Y (AO22XL)                          0.10       4.45 r
+  y_out_reg[31]/D (DFFRQXL)                0.00       4.45 r
+  data arrival time                                   4.45
+
+  clock axis_clk (rise edge)               5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  y_out_reg[31]/CK (DFFRQXL)               0.00       5.40 r
+  library setup time                      -0.15       5.25
+  data required time                                  5.25
+  -----------------------------------------------------------
+  data required time                                  5.25
+  data arrival time                                  -4.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.81
+
+
+  Startpoint: y_out_reg[1]
+              (rising edge-triggered flip-flop clocked by axis_clk)
+  Endpoint: y_out_reg[30]
+            (rising edge-triggered flip-flop clocked by axis_clk)
+  Path Group: axis_clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock axis_clk (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  y_out_reg[1]/CK (DFFRQXL)                0.00       0.50 r
+  y_out_reg[1]/Q (DFFRQXL)                 0.28       0.78 f
+  U1183/Y (OR2XL)                          0.16       0.94 f
+  U526/Y (AOI21XL)                         0.11       1.05 r
+  U492/Y (OAI21XL)                         0.10       1.15 f
+  U525/Y (AOI21XL)                         0.11       1.26 r
+  U491/Y (OAI21XL)                         0.10       1.35 f
+  U524/Y (AOI21XL)                         0.11       1.47 r
+  U490/Y (OAI21XL)                         0.10       1.56 f
+  U523/Y (AOI21XL)                         0.11       1.67 r
+  U489/Y (OAI21XL)                         0.10       1.77 f
+  U522/Y (AOI21XL)                         0.11       1.88 r
+  U488/Y (OAI21XL)                         0.10       1.98 f
+  U521/Y (AOI21XL)                         0.11       2.09 r
+  U487/Y (OAI21XL)                         0.10       2.19 f
+  U520/Y (AOI21XL)                         0.11       2.30 r
+  U486/Y (OAI21XL)                         0.10       2.39 f
+  U519/Y (AOI21XL)                         0.11       2.51 r
+  U485/Y (OAI21XL)                         0.10       2.60 f
+  U518/Y (AOI21XL)                         0.11       2.71 r
+  U484/Y (OAI21XL)                         0.10       2.81 f
+  U483/Y (AOI21XL)                         0.11       2.92 r
+  U478/Y (OAI21XL)                         0.10       3.02 f
+  U482/Y (AOI21XL)                         0.11       3.13 r
+  U477/Y (OAI21XL)                         0.10       3.23 f
+  U481/Y (AOI21XL)                         0.11       3.34 r
+  U476/Y (OAI21XL)                         0.10       3.44 f
+  U480/Y (AOI21XL)                         0.11       3.54 r
+  U475/Y (OA21XL)                          0.12       3.66 r
+  U479/Y (OAI21XL)                         0.08       3.74 f
+  U2086/Y (AO21XL)                         0.20       3.94 f
+  U2138/Y (AO21XL)                         0.20       4.15 f
+  U540/Y (XNOR2XL)                         0.11       4.25 r
+  U411/Y (AO22XL)                          0.10       4.36 r
+  y_out_reg[30]/D (DFFRQXL)                0.00       4.36 r
+  data arrival time                                   4.36
+
+  clock axis_clk (rise edge)               5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  y_out_reg[30]/CK (DFFRQXL)               0.00       5.40 r
+  library setup time                      -0.15       5.25
+  data required time                                  5.25
+  -----------------------------------------------------------
+  data required time                                  5.25
+  data arrival time                                  -4.36
+  -----------------------------------------------------------
+  slack (MET)                                         0.89
+
+
+  Startpoint: y_out_reg[1]
+              (rising edge-triggered flip-flop clocked by axis_clk)
+  Endpoint: y_out_reg[29]
+            (rising edge-triggered flip-flop clocked by axis_clk)
+  Path Group: axis_clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock axis_clk (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  y_out_reg[1]/CK (DFFRQXL)                0.00       0.50 r
+  y_out_reg[1]/Q (DFFRQXL)                 0.28       0.78 f
+  U1183/Y (OR2XL)                          0.16       0.94 f
+  U526/Y (AOI21XL)                         0.11       1.05 r
+  U492/Y (OAI21XL)                         0.10       1.15 f
+  U525/Y (AOI21XL)                         0.11       1.26 r
+  U491/Y (OAI21XL)                         0.10       1.35 f
+  U524/Y (AOI21XL)                         0.11       1.47 r
+  U490/Y (OAI21XL)                         0.10       1.56 f
+  U523/Y (AOI21XL)                         0.11       1.67 r
+  U489/Y (OAI21XL)                         0.10       1.77 f
+  U522/Y (AOI21XL)                         0.11       1.88 r
+  U488/Y (OAI21XL)                         0.10       1.98 f
+  U521/Y (AOI21XL)                         0.11       2.09 r
+  U487/Y (OAI21XL)                         0.10       2.19 f
+  U520/Y (AOI21XL)                         0.11       2.30 r
+  U486/Y (OAI21XL)                         0.10       2.39 f
+  U519/Y (AOI21XL)                         0.11       2.51 r
+  U485/Y (OAI21XL)                         0.10       2.60 f
+  U518/Y (AOI21XL)                         0.11       2.71 r
+  U484/Y (OAI21XL)                         0.10       2.81 f
+  U483/Y (AOI21XL)                         0.11       2.92 r
+  U478/Y (OAI21XL)                         0.10       3.02 f
+  U482/Y (AOI21XL)                         0.11       3.13 r
+  U477/Y (OAI21XL)                         0.10       3.23 f
+  U481/Y (AOI21XL)                         0.11       3.34 r
+  U476/Y (OAI21XL)                         0.10       3.44 f
+  U480/Y (AOI21XL)                         0.11       3.54 r
+  U475/Y (OA21XL)                          0.12       3.66 r
+  U479/Y (OAI21XL)                         0.08       3.74 f
+  U2086/Y (AO21XL)                         0.20       3.94 f
+  U541/Y (XNOR2XL)                         0.11       4.05 r
+  U412/Y (AO22XL)                          0.10       4.15 r
+  y_out_reg[29]/D (DFFRQXL)                0.00       4.15 r
+  data arrival time                                   4.15
+
+  clock axis_clk (rise edge)               5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  y_out_reg[29]/CK (DFFRQXL)               0.00       5.40 r
+  library setup time                      -0.15       5.25
+  data required time                                  5.25
+  -----------------------------------------------------------
+  data required time                                  5.25
+  data arrival time                                  -4.15
+  -----------------------------------------------------------
+  slack (MET)                                         1.10
+
+
+  Startpoint: y_out_reg[0]
+              (rising edge-triggered flip-flop clocked by axis_clk)
+  Endpoint: y_out_reg[28]
+            (rising edge-triggered flip-flop clocked by axis_clk)
+  Path Group: axis_clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock axis_clk (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  y_out_reg[0]/CK (DFFRQXL)                0.00       0.50 r
+  y_out_reg[0]/Q (DFFRQXL)                 0.23       0.73 r
+  U1185/Y (NAND2XL)                        0.07       0.80 f
+  U1186/Y (INVXL)                          0.05       0.86 r
+  U526/Y (AOI21XL)                         0.09       0.95 f
+  U492/Y (OAI21XL)                         0.12       1.07 r
+  U525/Y (AOI21XL)                         0.10       1.17 f
+  U491/Y (OAI21XL)                         0.11       1.28 r
+  U524/Y (AOI21XL)                         0.10       1.38 f
+  U490/Y (OAI21XL)                         0.11       1.49 r
+  U523/Y (AOI21XL)                         0.10       1.59 f
+  U489/Y (OAI21XL)                         0.11       1.70 r
+  U522/Y (AOI21XL)                         0.10       1.80 f
+  U488/Y (OAI21XL)                         0.11       1.91 r
+  U521/Y (AOI21XL)                         0.10       2.00 f
+  U487/Y (OAI21XL)                         0.11       2.12 r
+  U520/Y (AOI21XL)                         0.10       2.21 f
+  U486/Y (OAI21XL)                         0.11       2.32 r
+  U519/Y (AOI21XL)                         0.10       2.42 f
+  U485/Y (OAI21XL)                         0.11       2.53 r
+  U518/Y (AOI21XL)                         0.10       2.63 f
+  U484/Y (OAI21XL)                         0.11       2.74 r
+  U483/Y (AOI21XL)                         0.10       2.84 f
+  U478/Y (OAI21XL)                         0.11       2.95 r
+  U482/Y (AOI21XL)                         0.10       3.05 f
+  U477/Y (OAI21XL)                         0.11       3.16 r
+  U481/Y (AOI21XL)                         0.10       3.26 f
+  U476/Y (OAI21XL)                         0.11       3.37 r
+  U480/Y (AOI21XL)                         0.10       3.47 f
+  U475/Y (OA21XL)                          0.22       3.69 f
+  U479/Y (OAI21XL)                         0.10       3.79 r
+  U542/Y (XNOR2XL)                         0.12       3.90 r
+  U413/Y (AO22XL)                          0.11       4.01 r
+  y_out_reg[28]/D (DFFRQXL)                0.00       4.01 r
+  data arrival time                                   4.01
+
+  clock axis_clk (rise edge)               5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  y_out_reg[28]/CK (DFFRQXL)               0.00       5.40 r
+  library setup time                      -0.15       5.25
+  data required time                                  5.25
+  -----------------------------------------------------------
+  data required time                                  5.25
+  data arrival time                                  -4.01
+  -----------------------------------------------------------
+  slack (MET)                                         1.24
+
+
+  Startpoint: y_out_reg[0]
+              (rising edge-triggered flip-flop clocked by axis_clk)
+  Endpoint: y_out_reg[27]
+            (rising edge-triggered flip-flop clocked by axis_clk)
+  Path Group: axis_clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock axis_clk (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  y_out_reg[0]/CK (DFFRQXL)                0.00       0.50 r
+  y_out_reg[0]/Q (DFFRQXL)                 0.23       0.73 r
+  U1185/Y (NAND2XL)                        0.07       0.80 f
+  U1186/Y (INVXL)                          0.05       0.86 r
+  U526/Y (AOI21XL)                         0.09       0.95 f
+  U492/Y (OAI21XL)                         0.12       1.07 r
+  U525/Y (AOI21XL)                         0.10       1.17 f
+  U491/Y (OAI21XL)                         0.11       1.28 r
+  U524/Y (AOI21XL)                         0.10       1.38 f
+  U490/Y (OAI21XL)                         0.11       1.49 r
+  U523/Y (AOI21XL)                         0.10       1.59 f
+  U489/Y (OAI21XL)                         0.11       1.70 r
+  U522/Y (AOI21XL)                         0.10       1.80 f
+  U488/Y (OAI21XL)                         0.11       1.91 r
+  U521/Y (AOI21XL)                         0.10       2.00 f
+  U487/Y (OAI21XL)                         0.11       2.12 r
+  U520/Y (AOI21XL)                         0.10       2.21 f
+  U486/Y (OAI21XL)                         0.11       2.32 r
+  U519/Y (AOI21XL)                         0.10       2.42 f
+  U485/Y (OAI21XL)                         0.11       2.53 r
+  U518/Y (AOI21XL)                         0.10       2.63 f
+  U484/Y (OAI21XL)                         0.11       2.74 r
+  U483/Y (AOI21XL)                         0.10       2.84 f
+  U478/Y (OAI21XL)                         0.11       2.95 r
+  U482/Y (AOI21XL)                         0.10       3.05 f
+  U477/Y (OAI21XL)                         0.11       3.16 r
+  U481/Y (AOI21XL)                         0.10       3.26 f
+  U476/Y (OAI21XL)                         0.11       3.37 r
+  U480/Y (AOI21XL)                         0.10       3.47 f
+  U475/Y (OA21XL)                          0.22       3.69 f
+  U543/Y (XOR2XL)                          0.11       3.79 r
+  U414/Y (AO22XL)                          0.10       3.90 r
+  y_out_reg[27]/D (DFFRQXL)                0.00       3.90 r
+  data arrival time                                   3.90
+
+  clock axis_clk (rise edge)               5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  y_out_reg[27]/CK (DFFRQXL)               0.00       5.40 r
+  library setup time                      -0.15       5.25
+  data required time                                  5.25
+  -----------------------------------------------------------
+  data required time                                  5.25
+  data arrival time                                  -3.90
+  -----------------------------------------------------------
+  slack (MET)                                         1.36
+
+
+1
